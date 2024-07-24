@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Kaushan Script', cursive, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    color: #CC8C7D;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation-name: slide-in;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+@keyframes slide-in{
+    0%{
+    color: #CC8C7D;
+    text-shadow:  0px 0px 0px #353535;
+
+    }
+    50%{
+        color: #CCBBC7 ;
+        text-shadow: 3px 3px 5px #808080;
+
+    }
+    100%{
+        color:   white;
+        text-shadow:  6px 5px 10px #353535;
+    }
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(17, 124, 143);
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 30px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-style: italic;
+    transition: text-decoration 4s step-start;
+}
+nav a:hover{
+    color: #9479CC;
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+    color:  #C9C726;
+    text-decoration: underline;
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+iframe {
+    padding: 10px;
+    height: 300px;
+}
+
+img {
+    padding: 10px;
+}
+
+section h5 {
+    margin: 40px;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    float: left;
+    color: white;
+    transition: text-decoration 2s ease-in;
+}
+
+footer a:hover{
+color: #CC66C7;
+text-decoration: underline;
+}
+
+.image{
+    clip-path: ellipse(33% 50% at 53% 50%);
+    width: 30%;
+    height: 200px;
+    z-index: 2;
+}
+
+section{
+    min-height: 80%;
+}
+
+.study{
+    height: 50%;
+}
+
+.study a{
+    height: 25%;
+    padding: 25px;
+    width: 33%;
+}
+
+.study.item{
+  height: 25%;
+}
+
+.social{
+    width: 50px;
+    padding: 10px;
+}
+.exit{
+       margin: 6px auto;
+   }
+
+ h4{
+       font-size: 125%;
+       margin: 10px;
+       padding: 10px;
+       color: #89ADCC;
+       font-style: oblique;
+       font-weight: 800;
+       letter-spacing: 40%;
+       word-spacing: 120%;
+   }
+
+   h3{
+       font-size: 20%;
+       letter-spacing: 30%;
+       word-spacing: 40%;
+       line-height: 2;
+       margin: 10px 10px 10px 10px;
+       font-weight: 700;
+   }
+
+   .youtube{
+       text-decoration: none;
+       padding: 5px;
+       border: 2px solid #CC7DBB ;
+       border-radius: 10px;
+   }
+
+   .linkedin{
+       text-decoration: none;
+       padding: 5px;
+       border: 2px solid  #CC7DBB;
+       border-radius: 10px;
+       color:  #0077b5;
+   }
+
+   .fa-youtube{
+       padding: 5px;
+      color: #FF0000;
+   }
+
+   .fa-linkedin{
+       padding: 5px;
+       background-color:  #0077b5;
+       color: #FFFFFF;
+       border-radius: 50%;
+   }
+  .you{
+      color: #000000;
+  }
+
+  .tube{
+      background-color: #FF0000;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      border-radius: 10px;
+  }
+
+#button, #button2{
+       position: relative;
+       left: 120%;
+       top: 40%;
+       border-radius: 6px;
+       height: 40%;
+       font-family: 'Kaushan Script', cursive, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#button{
+    color: #FFFFFF;
+    background-color: #AB8CCC;
+    text-decoration: none;
+    font-size: 80%;
+    cursor: pointer;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon,#second,#third {
+    height: 30px;
+    width: 30px;
+    background-color: #AEAEAE;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+    opacity: 3;
+    width: 45px;
+    height: 45px;
+    text-shadow: 7px 4px 9px #808080;
+    background-color: #565656;
+}
+
+@media only screen and (max-width:700px){
+   nav{
+          flex-direction: column;
+          height: 200px;
+          padding:2px;
+          margin: 4px;
+   }
+   nav a{
+       padding: 7px;
+       margin: 2px;
+       text-align: center;
+
+   }
+   footer{
+          flex-direction: column;
+          height: 300px;
+          padding:2px;
+          margin: 4px;
+   }
+
+   footer a{
+       padding: 5px;
+       margin: 2px;
+   }
+   .exit{
+       text-align: center;
+   }
+
+}
